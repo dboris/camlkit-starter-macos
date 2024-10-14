@@ -1,3 +1,6 @@
+## Xcode user settings
+xcuserdata/
+
 /_build
 /local
 .DS_Store
