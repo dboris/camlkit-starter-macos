@@ -1,0 +1,6 @@
+/_build
+/local
+.DS_Store
+.merlin
+.vscode/
+*.xcframework/

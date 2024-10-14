@@ -1,0 +1,8 @@
+(executable
+ (name main)
+ (libraries
+  camlkit-base.runtime
+  camlkit-base.Foundation
+  camlkit-gui.AppKit)
+ (flags :standard -ccopt "-framework AppKit")
+ (modes native))
