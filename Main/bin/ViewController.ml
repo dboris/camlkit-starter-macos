@@ -9,7 +9,7 @@ let viewDidLoad =
     ~args: Objc_t.noargs
     ~return: Objc_t.void @@
     fun self cmd ->
-      self |> msg_super cmd ~args: Objc_t.noargs ~return: Objc_t.void;
+      msg_super ~self cmd ~args: Objc_t.noargs ~return: Objc_t.void;
       eprintf "viewDidLoad...\n%!";
       let v =
         NSView.self |> alloc
