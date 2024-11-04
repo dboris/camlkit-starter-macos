@@ -1,15 +1,10 @@
-open Foundation
 open AppKit
-open Runtime
 open Printf
 
 let viewDidLoad =
-  Method.define
-    ~cmd: (selector "viewDidLoad")
-    ~args: Objc_t.noargs
-    ~return: Objc_t.void @@
+  NSViewControllerMethods.viewDidLoad @@
     fun self cmd ->
-      msg_super ~self cmd ~args: Objc_t.noargs ~return: Objc_t.void;
+      msg_super cmd ~self ~args: Objc_type.noargs ~return: Objc_type.void;
       eprintf "viewDidLoad...\n%!";
       let v =
         NSView.self |> alloc

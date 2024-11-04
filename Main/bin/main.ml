@@ -1,5 +1,4 @@
 open AppKit
-open Runtime
 
 let main () =
   let _ = AppDelegate.define ()
